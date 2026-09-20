@@ -2443,67 +2443,6 @@ body {
 }
 
 
-@media (max-width: 600px) {
-
-  .domain-feature {
-   
-    border-radius: 20px;
-  }
-
-  .domain-heading h3 {
-    font-size: 21px;
-  }
-
-  .domain-heading p {
-    font-size: 13px;
-  }
-
-  .domain-dashboard {
-   
-  }
-
-  .domain-dashboard::before {
-   
-  }
-
-  .dashboard-nav {
-    margin: 0 10px;
-    gap: 18px;
-   
-  }
-
-  .connected-section,
-  .domain-setup {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .connected-domain {
-    align-items: flex-start;
-    gap: 15px;
-    flex-direction: column;
-  }
-
-  .dns-providers {
-    margin-left: 10px;
-    margin-right: 10px;
-
-    gap: 18px;
-    padding: 20px;
-  }
-
-  .domain-input-row {
-    flex-direction: column;
-  }
-
-  .verify-button {
-    min-height: 46px;
-  }
-
-  .supported-dns {
-    flex-wrap: wrap;
-  }
-}
 
 
 /* =================================
@@ -2851,273 +2790,588 @@ body {
    Responsive
 ================================= */
 
+/* =========================================
+   Large Tablet / Laptop
+========================================= */
+
 @media (max-width: 1024px) {
 
-  .courier-feature {
+  .domain-feature {
     padding: 24px;
+    border-radius: 24px;
+    overflow: hidden;
   }
 
-  .courier-background {
-    min-height: 500px;
+  .domain-heading {
+    margin-bottom: 20px;
   }
 
-  .courier-ui {
-    margin-left: 25px;
-    margin-top: 25px;
+  .domain-heading h3 {
+    font-size: 20px;
+    line-height: 1.35;
   }
 
-  .customer-grid {
+  .domain-heading p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .domain-dashboard {
+    width: 100%;
+    min-height: auto;
+    padding: 24px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 24px;
+  }
+
+  /* Navigation */
+
+  .dashboard-nav {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .dashboard-nav span {
+    font-size: 12px;
+  }
+
+  .grid-button {
+    width: 34px;
+    height: 34px;
+  }
+
+  /* Connected Domain */
+
+  .connected-section {
+    width: 100%;
+  }
+
+  .connected-domain {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Your Domain */
+
+  .domain-dashboard > div[style*="margin-left: 90px"] {
+    margin-left: 40px !important;
+  }
+
+  /* DNS Providers */
+
+  .dns-providers {
     gap: 12px;
   }
 
-  .courier-list {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 8px;
+  .provider {
+    min-width: 0;
   }
 
-  .pathao-icon,
-  .redx,
-  .carry,
-  .steadfast {
+  /* Arrow */
+
+  .provider-arrow {
+    margin-top: 70px !important;
+  }
+
+  /* Setup */
+
+  .domain-setup {
     width: 100%;
-    min-width: 0;
-    height: 52px;
-    padding: 8px 10px;
+  }
+
+  .domain-setup > div[style*="width: 1019px"] {
+    width: 100% !important;
   }
 }
 
 
-/* =================================
+/* =========================================
    Tablet
-================================= */
+========================================= */
 
 @media (max-width: 768px) {
 
-  .courier-feature {
+  .domain-feature {
     padding: 20px;
     border-radius: 20px;
   }
 
-  .courier-heading h3 {
+  .domain-heading {
+    margin-bottom: 16px;
+  }
+
+  .domain-heading h3 {
     font-size: 18px;
+    line-height: 1.35;
   }
 
-  .courier-heading p {
-    font-size: 11px;
-  }
-
-  .courier-background {
-    min-height: 500px;
-    border-radius: 18px;
-  }
-
-  .courier-ui {
-    margin-left: 18px;
-    margin-top: 20px;
-    min-height: 450px;
-    border-radius: 18px 0 0 0;
-  }
-
-  .courier-ui h4 {
-    padding: 15px;
-    font-size: 13px;
-  }
-
-  .customer-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    padding: 15px;
-  }
-
-  .input-group label {
+  .domain-heading p {
     font-size: 12px;
-  }
-
-  .fake-input {
-    font-size: 12px;
-    padding: 8px 10px;
-  }
-
-  .courier-select {
-    padding: 0 15px 15px;
-  }
-
-  .courier-list {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 7px;
-  }
-
-  .pathao-icon,
-  .redx,
-  .carry,
-  .steadfast {
-    width: 100%;
-    height: 48px;
-    padding: 6px;
-    gap: 4px;
-    font-size: 10px;
-  }
-
-  .courier-list i {
-    width: 30px;
-    height: 30px;
-    font-size: 16px;
-  }
-
-  .courier-actions {
-    padding: 10px 15px;
-  }
-}
-
-
-/* =================================
-   Mobile
-================================= */
-
-@media (max-width: 576px) {
-
-  .courier-feature {
-    padding: 15px;
-    border-radius: 18px;
-  }
-
-  .courier-heading {
-    margin-bottom: 14px;
-  }
-
-  .courier-heading h3 {
-    font-size: 17px;
-  }
-
-  .courier-heading p {
-    font-size: 10px;
     line-height: 1.5;
   }
 
-  .courier-background {
-    min-height: 550px;
-    border-radius: 16px;
+  .domain-dashboard {
+    min-height: auto;
+    padding: 18px;
+    border-radius: 20px;
   }
 
-  .courier-ui {
-    margin-left: 10px;
-    margin-top: 15px;
-    min-height: 500px;
-    border-radius: 16px 0 0 0;
-  }
 
-  .courier-ui h4 {
-    padding: 14px;
-    font-size: 12px;
-  }
+  /* =========================
+     Top Navigation
+  ========================= */
 
-  /* Customer inputs */
-  .customer-grid {
-    grid-template-columns: 1fr;
-    gap: 12px;
-    padding: 14px;
-  }
-
-  .input-group label {
-    font-size: 11px;
-  }
-
-  .fake-input {
-    width: 100%;
-    font-size: 11px;
-  }
-
-  /* Courier */
-  .courier-select {
-    padding: 0 12px 12px;
-  }
-
-  .courier-list {
-    grid-template-columns: repeat(2, 1fr);
+  .dashboard-nav {
+    display: flex;
+    align-items: center;
     gap: 8px;
+    flex-wrap: wrap;
   }
 
-  .pathao-icon,
-  .redx,
-  .carry,
-  .steadfast {
-    width: 100%;
-    height: 50px;
-    padding: 6px 8px;
+  .dashboard-nav span {
+    font-size: 11px;
+    white-space: nowrap;
+  }
+
+  .dashboard-nav .active-tab {
+    padding: 5px 8px;
+  }
+
+  .dashboard-nav span[style*="background-color"] {
+    padding: 5px 10px !important;
     font-size: 10px;
   }
 
-  .courier-list i {
-    width: 28px;
-    height: 28px;
+  .grid-button {
+    width: 30px;
+    height: 30px;
+  }
+
+
+  /* =========================
+     Connected Domain
+  ========================= */
+
+  .connected-section {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .connected-domain {
+    width: 100%;
+    padding: 14px;
+    box-sizing: border-box;
+  }
+
+  .domain-info small {
+    font-size: 9px;
+  }
+
+  .domain-info strong {
+    display: block;
+    font-size: 12px;
+    word-break: break-word;
+  }
+
+  .active-status {
+    font-size: 11px;
+    white-space: nowrap;
+  }
+
+
+  /* =========================
+     Your Domain
+  ========================= */
+
+  .domain-dashboard > div[style*="margin-left: 90px"] {
+    margin-left: 15px !important;
+    gap: 8px !important;
+  }
+
+  .domain-dashboard > div[style*="margin-left: 90px"] span {
+    font-size: 12px;
+  }
+
+  .domain-dashboard > div[style*="margin-left: 90px"] span[style*="font-size: 11.5px"] {
+    font-size: 10px !important;
+  }
+
+
+  /* =========================
+     DNS Providers
+  ========================= */
+
+  .dns-providers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .provider {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .provider-logo {
+    max-width: 100%;
+  }
+
+  .provider span {
+    font-size: 11px;
+  }
+
+  .provider-arrow {
+    margin-top: 50px !important;
+  }
+
+
+  /* =========================
+     Domain Setup
+  ========================= */
+
+  .domain-setup {
+    width: 100%;
+  }
+
+  .domain-setup h4 {
     font-size: 15px;
+    line-height: 1.4;
   }
 
-  /* Buttons */
-  .courier-actions {
-    justify-content: flex-end;
-    gap: 6px;
-    padding: 10px 12px;
+  .setup-description {
+    font-size: 11px;
+    line-height: 1.5;
   }
 
-  .courier-actions button {
-    padding: 7px 10px;
-    font-size: 8px;
+  .domain-setup > div[style*="width: 1019px"] {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .domain-setup > div[style*="width: 1019px"] span {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 9px !important;
+    line-height: 1.5 !important;
   }
 }
 
 
-/* =================================
-   Small Mobile
-================================= */
+/* =========================================
+   Mobile
+========================================= */
 
-@media (max-width: 400px) {
+@media (max-width: 576px) {
 
-  .courier-feature {
-    padding: 10px;
+  .domain-feature {
+    padding: 15px;
+    border-radius: 18px;
   }
 
-  .courier-background {
-    min-height: 470px;
+  .domain-heading {
+    margin-bottom: 14px;
   }
 
-  .courier-ui {
-    margin-left: 7px;
-    margin-top: 10px;
+  .domain-heading h3 {
+    font-size: 17px;
+    line-height: 1.35;
   }
 
-  .customer-grid {
-    padding: 10px;
+  .domain-heading p {
+    font-size: 11px;
+    line-height: 1.5;
   }
 
-  .courier-select {
-    padding-left: 10px;
-    padding-right: 10px;
+  .domain-dashboard {
+    width: 100%;
+    padding: 12px;
+    border-radius: 16px;
+    min-height: auto;
   }
 
-  /* 2 columns */
-  .courier-list {
-    grid-template-columns: repeat(2, 1fr);
+
+  /* =========================
+     Navigation
+  ========================= */
+
+  .dashboard-nav {
+    display: flex;
     gap: 6px;
+    flex-wrap: wrap;
   }
 
-  .pathao-icon,
-  .redx,
-  .carry,
-  .steadfast {
-    height: 45px;
-    padding: 5px;
+  .dashboard-nav span {
     font-size: 9px;
   }
 
-  .courier-list i {
-    width: 24px;
-    height: 24px;
-    font-size: 14px;
+  .dashboard-nav .active-tab {
+    padding: 4px 7px;
   }
 
-  .courier-actions button {
-    padding: 6px 8px;
+  .dashboard-nav span[style*="background-color"] {
+    padding: 4px 8px !important;
+    font-size: 8px;
+  }
+
+  .grid-button {
+    width: 26px;
+    height: 26px;
+    font-size: 11px;
+  }
+
+
+  /* =========================
+     Connected Domain
+  ========================= */
+
+  .connected-section {
+    margin-top: 15px;
+  }
+
+  .connected-section > span {
+    font-size: 11px;
+  }
+
+  .connected-domain {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 12px;
+    margin-top: 8px;
+  }
+
+  .domain-info {
+    min-width: 0;
+  }
+
+  .domain-info small {
+    font-size: 8px;
+  }
+
+  .domain-info strong {
+    font-size: 10px;
+    line-height: 1.4;
+    word-break: break-all;
+  }
+
+  .active-status {
+    font-size: 9px;
+  }
+
+
+  /* =========================
+     Your Domain
+  ========================= */
+
+  .domain-dashboard > div[style*="margin-left: 90px"] {
+    margin-left: 5px !important;
+    margin-top: 15px !important;
+    gap: 7px !important;
+  }
+
+  .domain-dashboard > div[style*="margin-left: 90px"] i {
+    font-size: 13px;
+  }
+
+  .domain-dashboard > div[style*="margin-left: 90px"] span {
+    font-size: 10px;
+  }
+
+  .domain-dashboard > div[style*="margin-left: 90px"] span[style*="font-size: 11.5px"] {
+    font-size: 8px !important;
+    line-height: 13px !important;
+    height: auto !important;
+  }
+
+
+  /* =========================
+     DNS Providers
+  ========================= */
+
+  .dns-providers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 15px;
+  }
+
+  .provider {
+    width: 100%;
+    min-width: 0;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+
+  .provider-logo {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .provider-logo img {
+    max-width: 75px;
+    max-height: 25px;
+    object-fit: contain;
+  }
+
+  .provider span {
+    font-size: 9px;
+  }
+
+  .provider-arrow {
+    margin-top: 20px !important;
+  }
+
+  .provider-arrow img {
+    max-width: 20px;
+  }
+
+
+  /* =========================
+     Domain Setup
+  ========================= */
+
+  .domain-setup {
+    margin-top: 20px;
+  }
+
+  .domain-setup h4 {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .setup-description {
+    font-size: 9px;
+    line-height: 1.5;
+  }
+
+  .domain-setup > div[style*="width: 1019px"] {
+    width: 100% !important;
+    margin-top: 12px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .domain-setup > div[style*="width: 1019px"] span {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 8px !important;
+    line-height: 1.5 !important;
+  }
+}
+
+
+/* =========================================
+   Small Mobile
+========================================= */
+
+@media (max-width: 400px) {
+
+  .domain-feature {
+    padding: 10px;
+    border-radius: 16px;
+  }
+
+  .domain-heading h3 {
+    font-size: 16px;
+  }
+
+  .domain-heading p {
+    font-size: 10px;
+  }
+
+  .domain-dashboard {
+    padding: 9px;
+    border-radius: 14px;
+  }
+
+
+  /* Navigation */
+
+  .dashboard-nav {
+    gap: 5px;
+  }
+
+  .dashboard-nav span {
+    font-size: 8px;
+  }
+
+  .dashboard-nav span[style*="background-color"] {
+    padding: 3px 7px !important;
+    font-size: 7px;
+  }
+
+  .grid-button {
+    width: 24px;
+    height: 24px;
+  }
+
+
+  /* Connected */
+
+  .connected-domain {
+    padding: 10px;
+  }
+
+  .domain-info small {
+    font-size: 7px;
+  }
+
+  .domain-info strong {
+    font-size: 9px;
+  }
+
+  .active-status {
+    font-size: 8px;
+  }
+
+
+  /* Your Domain */
+
+  .domain-dashboard > div[style*="margin-left: 90px"] {
+    margin-left: 2px !important;
+  }
+
+
+  /* DNS */
+
+  .dns-providers {
+    gap: 6px;
+  }
+
+  .provider {
+    padding: 6px;
+  }
+
+  .provider-logo {
+    height: 30px;
+  }
+
+  .provider-logo img {
+    max-width: 60px;
+    max-height: 20px;
+  }
+
+  .provider span {
+    font-size: 8px;
+  }
+
+
+  /* Setup */
+
+  .domain-setup h4 {
+    font-size: 12px;
+  }
+
+  .setup-description {
+    font-size: 8px;
+  }
+
+  .domain-setup > div[style*="width: 1019px"] span {
+    font-size: 7px !important;e
   }
 }
 
